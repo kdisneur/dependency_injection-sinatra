@@ -6,7 +6,7 @@ module Sinatra
   module DependencyInjection
     module Helper
       def container
-        @dependency_injection_container if @dependency_injection_container
+        return @dependency_injection_container if @dependency_injection_container
 
         @dependency_injection_container = ::DependencyInjection::Container.new
         loader = ::DependencyInjection::Loaders::Yaml.new(@dependency_injection_container)
