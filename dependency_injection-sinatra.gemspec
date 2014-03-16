@@ -15,5 +15,5 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
 
   spec.add_dependency('sinatra')
-  spec.add_dependency('dependency_injection', '~> 0.4.1')
+  spec.add_dependency('dependency_injection', '~> 0.4.2')
 end
